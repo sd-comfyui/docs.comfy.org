@@ -1,97 +1,198 @@
 ---
-title: "Introduction"
-description: "Welcome to the new home for your documentation"
+title: "ComfyUI Official Documentation"
+description: "ComfyUI Official Documentation"
+icon: "book-open"
+sidebarTitle: "Introduction"
+mode: "frame"
 ---
 
-## Setting up
+<div className="relative">
+{/* header */}
+<div className="w-full text-center mt-16 pb-8">
+  <div className="mt-24 text-center">
+    <img src="/logo/light.svg" className="block dark:hidden pointer-events-none mx-auto" />
+    <img src="/logo/dark.svg" className="hidden dark:block pointer-events-none mx-auto"/>
+  </div>
+  <div className="flex justify-center w-full">
+    <h1
+      style={{
+        fontSize: "18px",
+        fontWeight: "bold",
+        marginTop: "10px",
+        textAlign: "center"
+      }}
+      className="text-center"
+    >
+      ComfyUI Official Documentation
+    </h1>
+  </div>
+</div>
+{/* header end */}
 
-Get your documentation site up and running in minutes.
+{/* social start */}
+<div className="text-center pb-8">
+<div className="flex gap-4 justify-center items-center">
+  <a href="https://github.com/comfyanonymous/ComfyUI/" target="_blank" className="hover:opacity-80">
+    <Icon icon="github" iconType="solid" size={32}/>
+  </a>
+  <a href="https://x.com/ComfyUI" target="_blank" className="hover:opacity-80">
+    <Icon icon="x-twitter" iconType="solid" size={32}/>
+  </a>
+  <a href="https://discord.com/invite/comfyorg" target="_blank" className="hover:opacity-80">
+    <Icon icon="discord" iconType="solid" size={32}/>
+  </a>
+  <a href="https://www.youtube.com/@comfyorg" target="_blank" className="hover:opacity-80">
+    <Icon icon="youtube" iconType="solid" size={32}/>
+  </a>
+</div>
+</div>
+{/* social end */}
 
-<Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
-  horizontal
->
-  Follow our three step quickstart guide.
-</Card>
+<div className="px-4 max-w-5xl mx-auto">
 
-## Make it yours
+<p className="max-w-xl mx-auto px-4 mb-12 text-lg text-center text-gray-500 dark:text-zinc-500">
+The most powerful open source node-based application for generative AI
+</p>
 
-Design a docs site that looks great and empowers your users.
-
-<Columns cols={2}>
-  <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
-  >
-    Edit your docs locally and preview them in real time.
-  </Card>
-  <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
-  >
-    Customize the design and colors of your site to match your brand.
-  </Card>
+{/* Getting Started Section */}
+<div className="mb-12">
+  <h2 className="text-2xl font-bold mb-6 text-center">Getting Started</h2>
+  <CardGroup cols={3}>
     <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
-  </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
-  </Card>
-</Columns>
+      title="Download & Install"
+      icon="download"
+      href="/installation/system_requirements"
+    >
+      Install ComfyUI on Windows, macOS, or Linux
+    </Card>
+    <Card
+      title="First Generation"
+      icon="rocket"
+      href="/get_started/first_generation"
+    >
+      Create your first AI-generated image
+    </Card>
+    <Card
+      title="Basic Concepts"
+      icon="lightbulb"
+      href="/development/core-concepts/workflow"
+    >
+      Understand workflows, nodes, and links
+    </Card>
+  </CardGroup>
+</div>
 
-## Create beautiful pages
+{/* Learn & Tutorials Section */}
+<div className="mb-12">
+  <h2 className="text-2xl font-bold mb-6 text-center">Learn & Tutorials</h2>
+  <CardGroup cols={3}>
+    <Card
+      title="Interface Guide"
+      icon="window-maximize"
+      href="/interface/overview"
+    >
+      Navigate the ComfyUI interface
+    </Card>
+    <Card
+      title="Tutorials"
+      icon="book-open"
+      href="/tutorials/basic/text-to-image"
+    >
+      Step-by-step guides for common tasks
+    </Card>
+    <Card
+      title="Built-in Nodes"
+      icon="diagram-project"
+      href="/built-in-nodes/overview"
+    >
+      Learn about each node in ComfyUI
+    </Card>
+  </CardGroup>
+</div>
 
-Everything you need to create world-class documentation.
+{/* Development Section */}
+<div className="mb-12">
+  <h2 className="text-2xl font-bold mb-6 text-center">Development & Extension</h2>
+  <CardGroup cols={3}>
+    <Card
+      title="Development Guide"
+      icon="code"
+      href="/development/overview"
+    >
+      Contribute to ComfyUI development
+    </Card>
+    <Card
+      title="Custom Nodes"
+      icon="puzzle-piece"
+      href="/custom-nodes/overview"
+    >
+      Create and publish custom nodes
+    </Card>
+    <Card
+      title="API Documentation"
+      icon="terminal"
+      href="/development/comfyui-server/comms_overview"
+    >
+      Integrate ComfyUI with your applications
+    </Card>
+  </CardGroup>
+</div>
 
-<Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
-  </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
-  </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
-  </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
-</Columns>
+{/* Get Help Section */}
+<div className="mb-12">
+  <h2 className="text-2xl font-bold mb-6 text-center">Get Help</h2>
+  <CardGroup cols={3}>
+      <Card
+      title="Contact Support"
+      icon="headset"
+      href="/support/contact-support"
+    >
+      Get help from our support team
+    </Card>
+    <Card
+      title="Account Management"
+      icon="user-gear"
+      href="/account/create-account"
+    >
+      Create, login, and manage your account
+    </Card>
+    <Card
+      title="Billing Support"
+      icon="credit-card"
+      href="/support/subscription/subscribing"
+    >
+      Manage subscriptions and payments
+    </Card>
+    <Card
+      title="Troubleshooting"
+      icon="circle-question"
+      href="/troubleshooting/overview"
+    >
+      Resolve common issues and errors
+    </Card>
+    <Card
+      title="Community"
+      icon="users"
+      href="/community/links"
+    >
+      Join the ComfyUI community
+    </Card>
+  </CardGroup>
+</div>
 
-## Need inspiration?
+{/* About ComfyUI Section */}
+<div className="text-center mt-16 mb-8">
+  <h2 className="text-2xl font-bold mb-4">About ComfyUI</h2>
+  <p className="mb-4">
+    Written by <a href="https://github.com/comfyanonymous" className="text-blue-500 dark:text-blue-400 underline hover:text-blue-600 dark:hover:text-blue-500">comfyanonymous</a> and other <a href="https://github.com/comfyanonymous/ComfyUI/graphs/contributors" className="text-blue-500 dark:text-blue-400 underline hover:text-blue-600 dark:hover:text-blue-500">contributors</a>.
+  </p>
 
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
+  <ul className="list-none space-y-2 max-w-2xl mx-auto">
+    <li><strong>ComfyUI</strong> is a node-based interface and inference engine for generative AI</li>
+    <li>Users can combine various AI models and operations through nodes to achieve highly customizable and controllable content generation</li>
+    <li>ComfyUI is completely open source and can run on your local device</li>
+  </ul>
+</div>
+
+</div>
+</div>
